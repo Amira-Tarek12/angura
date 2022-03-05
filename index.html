@@ -1,0 +1,71 @@
+<html>
+
+   <head>
+       <link rel="stylesheet" href="bootstrap.min.css">
+
+   </head>
+
+
+   <body>
+   
+    <div class="w-75 m-auto ">
+
+     
+        <label for="productName" class="mt-2" >product Name :</label>
+        <input type="text" class="form-control my-2" id="productName"/>
+        
+        <label for="productPrice" >product Price :</label>
+        <input type="text" class="form-control my-2" id="productPrice"/>
+
+
+        <label for="produtCategory" >product Category :</label>
+        <input type="text" class="form-control my-2" id="produtCategory"/>
+
+
+        <label for="productDesc">product Description :</label>
+        <textarea type="text" class="form-control my-2" id="productDesc"></textarea>
+
+        <button  id="mainBtn" onclick="AddProduct()" class="btn btn-info m-3 p-2">Add Product</button>
+
+        <div class="w-75 p-4 m-auto">
+            <label for="search"></label>
+            <input type="text" placeholder="Search...." class="form-control" onkeyup="SearchProduct(this.term)" id="search"/>
+        </div>
+
+        <div class="w-75 m-auto mt-4">
+         <table class="table">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody id="tableRow">
+
+                
+
+
+            </tbody>
+  
+
+
+         </table>   
+         
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+   </body>
+</html>
